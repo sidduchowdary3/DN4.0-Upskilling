@@ -6,8 +6,6 @@ public class DataTypes {
         double c = 70.5;
         char d = 'A';
         boolean e = true;
-
-        // Display the values
         System.out.println("Integer (int): " + a);
         System.out.println("Floating-point (float): " + b);
         System.out.println("Double-precision (double): " + c);
