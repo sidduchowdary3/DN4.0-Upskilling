@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .custom-col {
+            background-color: #212529;
+            border: 1px solid #dee2e6;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Exercise 3 - Responsive Grid Layout</h1>
+        
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-col">
+                    <h3>Column 1</h3>
+                    <p>On mobile, this appears as a single column per row; on tablets, it shows two side by side, and on desktops, three columns are displayed per row.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-col">
+                    <h3>Column 2</h3>
+                    <p>This displays one column per row on phones, two columns per row on medium-sized devices, and three columns across larger screens.</p>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="custom-col">
+                    <h3>Column 3</h3>
+                    <p>Mobile devices show each column separately; tablets show two in a row, while desktops arrange three in one row.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
