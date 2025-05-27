@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap Display & Visibility</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="container my-5">
+    <h2 class="mb-4">Exercise 14.1: Responsive Visibility</h2>
+
+    <!-- Hidden on all, shown from md up -->
+    <div class="bg-warning text-dark p-3 mb-3 d-none d-md-block">
+      <strong>Note:</strong> Promotions are available on medium and larger screens.
+    </div>
+
+    <!-- Hidden on all, shown only from lg and up as flex -->
+    <div class="bg-primary text-white p-3 mb-3 d-none d-lg-flex justify-content-center">
+      <strong>Desktop Dashboard:</strong> Advanced analytics visible on large screens.
+    </div>
+
+    <!-- Always visible -->
+    <div class="bg-info text-white p-3">
+      <strong>Welcome!</strong> This content is always visible regardless of your device.
+    </div>
+
+    <hr class="my-5">
+
+    <h2 class="mb-4">Exercise 14.2: Responsive Sidebar</h2>
+
+    <div class="row">
+      <!-- Sidebar only on md and up -->
+      <div class="col-md-3 d-none d-md-block bg-success text-white border-end p-3">
+        <h5>Navigation</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Reports</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Logout</a></li>
+        </ul>
+      </div>
+
+      <!-- Main content -->
+      <div class="col-md-9 bg-light p-3">
+        <h4>Control Center</h4>
+        <p>Manage users, monitor activities, and configure system preferences here. Fully responsive layout adjusts for screen size.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
