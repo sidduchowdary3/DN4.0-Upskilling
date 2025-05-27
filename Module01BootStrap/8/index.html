@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8 – Bootstrap Forms</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .btn-green-yellow {
+      background-color: #ADFF2F;
+      color: #000;
+      border: none;
+    }
+    .btn-green-yellow:hover {
+      background-color: #9ACD32;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="text-primary text-center mb-5">Exercise 8 – Bootstrap Forms</h1>
+
+    <!-- Registration Form -->
+    <h3 class="text-secondary">8.1 – Registration Form</h3>
+    <form class="border p-4 mb-5 rounded shadow-sm">
+      <div class="mb-3">
+        <label for="fullNameInput" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullNameInput" placeholder="Siddhartha Yalamanchili">
+      </div>
+
+      <div class="mb-3">
+        <label for="emailInput" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="emailInput" placeholder="siddu@example.com">
+      </div>
+
+      <div class="mb-3 input-group">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" id="usernameInput" placeholder="sidchowdary">
+      </div>
+
+      <div class="mb-3 form-check">
+        <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
+        <label class="form-check-label" for="agreeCheck">
+          Accept to the terms and conditions
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-green-yellow">Register</button>
+    </form>
+
+    <!-- Login Form with Floating Labels -->
+    <h3 class="text-secondary">8.2 – Login Form (Floating Labels)</h3>
+    <form class="border p-4 rounded shadow-sm">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="loginEmailInput" placeholder="email@example.com">
+        <label for="loginEmailInput">Email</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="loginPassInput" placeholder="Enter Password">
+        <label for="loginPassInput">Password</label>
+      </div>
+
+      <button type="submit" class="btn btn-green-yellow w-100">Login</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
